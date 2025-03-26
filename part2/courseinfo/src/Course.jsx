@@ -9,6 +9,12 @@ const Course = ({ course }) => {
           </p>
         );
       })}
+      <b>
+        <p>
+          total of {course.parts.reduce((acc, obj) => acc + obj.exercises, 0)}{" "}
+          exercises
+        </p>
+      </b>
     </div>
   );
 };
